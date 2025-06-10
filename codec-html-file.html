@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codec - Leave Your Voice Where Your Feet Have Been</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-waves">
+        <div class="audio-wave wave-1"></div>
+        <div class="audio-wave wave-2"></div>
+        <div class="audio-wave wave-3"></div>
+        <div class="audio-wave wave-4"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" style="width: 50px; height: 50px;">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#5b6adb"/>
+                            <stop offset="100%" style="stop-color:#7b68ee"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="100" height="100" rx="20" fill="url(#logoGradient)"/>
+                    <circle cx="35" cy="40" r="8" fill="white"/>
+                    <circle cx="65" cy="40" r="8" fill="white"/>
+                    <path d="M20 60 Q50 80 80 60" stroke="white" stroke-width="4" fill="none"/>
+                </svg>
+                <span class="logo-text">codec</span>
+            </div>
+            <ul class="nav-links">
+                <li><button onclick="scrollToSection('features')">Features</button></li>
+                <li><button onclick="scrollToSection('how-it-works')">How It Works</button></li>
+                <li><button onclick="scrollToSection('download')">Download</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1>Leave Your Voice Where Your Feet Have Been</h1>
+                <p class="hero-tagline">"Your voice, their discovery"</p>
+                <p>
+                    Drop audio Echoes at real locations and discover the voices
+                    others have left behind. Turn the world into your personal
+                    soundscape where every place tells a story.
+                </p>
+
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('download')">
+                        Start Exploring
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('how-it-works')">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <div class="phone-showcase">
+                <div class="phone-container">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-logo">codec</div>
+                                <div class="settings-icon"></div>
+                            </div>
+
+                            <div class="greeting">
+                                <h2>Hello, Mark Zwe.</h2>
+                                <p class="location-info">
+                                    You're near 2 Echoes at San Francisco, United States.
+                                </p>
+                            </div>
+
+                            <div class="echo-filters">
+                                <div class="filter-btn active">10m</div>
+                                <div class="filter-btn">25m</div>
+                                <div class="filter-btn">50m</div>
+                            </div>
+
+                            <div class="echo-card">
+                                <div class="echo-info">
+                                    <h3>Chill</h3>
+                                    <div class="echo-meta">
+                                        Mark Zwe • Created 9m ago • 0 meters away
+                                    </div>
+                                </div>
+                                <button class="play-btn">▶</button>
+                            </div>
+
+                            <div class="echo-card">
+                                <div class="echo-info">
+                                    <h3>Chill</h3>
+                                    <div class="echo-meta">
+                                        Mark Zwe • Created 14h ago • 0 meters away
+                                    </div>
+                                </div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2 class="section-title">Experience Audio Like Never Before</h2>
+            <p class="section-subtitle">
+                Discover voices tied to real places, creating a living map of
+                human experiences
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🎙️</span>
+                <h3 class="feature-title">Drop Echoes</h3>
+                <p class="feature-description">
+                    Record 20-30 second voice notes and pin them to your exact location. Choose from moods like Chill, Romantic, Spooky, or Confessions.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🗺️</span>
+                <h3 class="feature-title">Discover Nearby</h3>
+                <p class="feature-description">
+                    Get notified when you're near hidden Echoes. Explore your city and uncover the voices others have left behind.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🌍</span>
+                <h3 class="feature-title">Location-Based</h3>
+                <p class="feature-description">
+                    Every Echo is permanently tied to its location. Return to special places and hear the memories waiting there.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🎭</span>
+                <h3 class="feature-title">Mood-Based</h3>
+                <p class="feature-description">
+                    Filter Echoes by mood to find exactly what you're looking for - whether it's laughter, love, or late-night confessions.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🚀</span>
+                <h3 class="feature-title">EchoBoost</h3>
+                <p class="feature-description">
+                    Boost your Echo's visibility and reach more listeners. Keep your voice alive longer in the places that matter.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🔮</span>
+                <h3 class="feature-title">Audio Treasure Hunt</h3>
+                <p class="feature-description">
+                    Some Echoes only reveal themselves when you're physically close, turning exploration into an adventure.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-header">
+            <h2 class="section-title">How Codec Works</h2>
+            <p class="section-subtitle">
+                Three simple steps to start leaving your voice in the world
+            </p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Record Your Echo</h3>
+                <p>
+                    Tap to record a voice note up to 30 seconds. Choose your mood and add a title to set the vibe.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Drop at Location</h3>
+                <p>
+                    Your Echo automatically pins to your current GPS location, becoming part of that place's story.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Discover & Explore</h3>
+                <p>
+                    Walk around and get notified when you're near other Echoes. Listen, explore, and connect with your community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="download">
+        <div class="cta-content">
+            <h2>Ready to Leave Your Mark?</h2>
+            <p>
+                Join thousands turning their world into a living soundscape of
+                human connection.
+            </p>
+
+            <div class="download-buttons">
+                <a href="#" class="download-btn">
+                    <span>📱</span>
+                    <div>
+                        <div style="font-size: 0.8rem;">Download on the</div>
+                        <div style="font-weight: 700;">App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="download-btn">
+                    <span>🤖</span>
+                    <div>
+                        <div style="font-size: 0.8rem;">Get it on</div>
+                        <div style="font-weight: 700;">Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Codec.</p>
+            <p><a href="#">Privacy & Policy</a></p>
+            <p><a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(0, 0, 0, 0.95)';
+            } else {
+                header.style.background = 'rgba(0, 0, 0, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
